@@ -38,10 +38,8 @@ function addMoons() {
     for (let i = 0; i < planetsObj.length; i++) {
         sum += planetsObj[i].moons
     }
-    solarSystem.innerHTML += `${sum}`
+    return sum
 }
-
-
 
 function ourSolarSystem() {
     planetsObj.forEach(planet => {
@@ -51,4 +49,3 @@ function ourSolarSystem() {
 }
 
 ourSolarSystem()
-addMoons()
